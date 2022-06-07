@@ -8,7 +8,7 @@ service AuthService {
   rpc Validate (ValidateRequest) returns (ValidateResponse) {}
 }
 
-// Register
+// Register def
 
 message RegisterRequest {
   string email = 1;
