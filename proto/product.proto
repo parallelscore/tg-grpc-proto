@@ -23,7 +23,7 @@ message CreateProductResponse {
   int32 id = 3;
 }
 
-// FindOne
+// FindOne product
 
 message FindOneData {
   int32 id = 1;
