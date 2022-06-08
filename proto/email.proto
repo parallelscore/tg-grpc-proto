@@ -3,7 +3,7 @@ syntax = "proto3";
 package email;
 
 service EmailService {
-  rpc ConfirmEmail (ConfirmRequest) returns (ConfirmResponse) {}
+  rpc ConfirmEmail (ConfirmEmailRequest) returns (ConfirmEmailResponse) {}
 }
 
 // ConfirmEmail
