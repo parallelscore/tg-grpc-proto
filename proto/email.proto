@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package email;
+
+service EmailService {
+  rpc ConfirmEmail (ConfirmRequest) returns (ConfirmResponse) {}
+}
+
+// ConfirmEmail
+
+message ConfirmEmailRequest {
+  string email = 1;
+  string message = 2;
+}
+
+message ConfirmEmailResponse {
+  int32 status = 1;
+  repeated string error = 2;
+}
